@@ -5,14 +5,32 @@ const mapsRoute = require('./routes/mapsR')
 const weaponsRoute = require('./routes/weaponsR')
 const signinRoute = require('./routes/signinR')
 const signupRoute = require('./routes/signupR')
+const dotenv =require('dotenv')
+const userModel =require('./model/userSchema')
+require('./db/mongo')  //----- mongo db path import
 const app = express()
-const port =5000
+
+//----- dontenv file config
+dotenv.config()
+const PORT = process.env.PORT || 5001
+
+//----- mongo connect -----//
+
+// mongoose.connect(process.env.MONGO,{
+//     useNewUrlParser:true,
+//     useUnifiedTopology:true
+// }) 
+// .then(()=> {
+//         console.log(`mongoconnect`)
+// })
+// .catch((err)=>console.log(err))
 
 
 //----- landing page -----//
 app.get('/',(req,res)=>{
     res.send("hello")
 })
+
 //----- about route -----//
 app.use('/about',aboutRoute)
 
@@ -33,6 +51,6 @@ app.use('/signup',signupRoute)
 
 
 
-app.listen(port,()=>{
-    console.log(`server running on https://localhost:${port}`)
+app.listen(PORT,()=>{
+    console.log(`server running on https://localhost:${PORT}`)
 })
