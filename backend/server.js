@@ -14,6 +14,9 @@ const app = express()
 dotenv.config()
 const PORT = process.env.PORT || 5001
 
+//------ converting into jsonObject -----//
+app.use(express.json())
+
 //----- mongo connect -----//
 
 // mongoose.connect(process.env.MONGO,{
