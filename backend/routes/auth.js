@@ -46,6 +46,8 @@ auth.post('/signup',async(req,res)=>{
     }
 })
 
+
+//----- sign route-----//
 auth.get('/signin',(req,res)=>{
     res.send("signin")
 })
