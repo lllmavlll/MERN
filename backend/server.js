@@ -3,8 +3,8 @@ const aboutRoute = require('./routes/aboutR')
 const agentsRoute = require('./routes/agentsR')
 const mapsRoute = require('./routes/mapsR')
 const weaponsRoute = require('./routes/weaponsR')
-const signinRoute = require('./routes/signinR')
-const signupRoute = require('./routes/signupR')
+// const signinRoute = require('./routes/signinR')
+// const signupRoute = require('./routes/signupR')
 const auth = require('./routes/auth')
 const dotenv =require('dotenv')
 const userModel =require('./model/userSchema')
@@ -39,10 +39,10 @@ app.use('/maps',mapsRoute)
 app.use('/weapons',weaponsRoute)
 
 //----- signin route -----//
-app.use('/signin',signinRoute)
+// app.use('/signin',signinRoute)
 
 //----- signup route -----//
-app.use('/signup',signupRoute)
+// app.use('/signup',signupRoute)
 
 
 

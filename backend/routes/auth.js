@@ -2,9 +2,9 @@ const express =require('express')
 const auth =express.Router()
 const userModel =require('../model/userSchema')
 const bcrypt = require('bcrypt');
-// const jwt = require('jsonwebtoken')
+const jwt = require('jsonwebtoken')
 
-
+//----- landing page -----//
 auth.get('/',(req,res)=>{
     res.send("signupRoute")
 })
@@ -69,6 +69,8 @@ auth.post('/signin',async(req,res)=>{
          return   res.status(400).send("invalid credentials")
             
         }
+
+        //----- generating token -----//
         const token = await existingUser.generateAuthToken()
         console.log(token)
         
