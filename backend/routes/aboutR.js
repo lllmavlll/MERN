@@ -1,5 +1,5 @@
 const express =require('express')
-aboutRoute =express.Router()
+const aboutRoute =express.Router()
 
 aboutRoute.get('/',(req,res)=>{
     res.send("about")

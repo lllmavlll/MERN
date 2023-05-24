@@ -1,7 +1,8 @@
 const express =require('express')
-mapsRoute =express.Router()
+const mapsRoute =express.Router()
 
 mapsRoute.get('/',(req,res)=>{
+    // res.cookie("noo","yess")
     res.send("mapsRoute")
 })
 

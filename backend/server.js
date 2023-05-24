@@ -5,6 +5,7 @@ const mapsRoute = require('./routes/mapsR')
 const weaponsRoute = require('./routes/weaponsR')
 const signinRoute = require('./routes/signinR')
 const signupRoute = require('./routes/signupR')
+const auth = require('./routes/auth')
 const dotenv =require('dotenv')
 const userModel =require('./model/userSchema')
 require('./db/mongo')  //----- mongo db path import
@@ -30,9 +31,12 @@ app.use(express.json())
 
 
 //----- landing page -----//
-app.get('/',(req,res)=>{
-    res.send("hello")
-})
+
+// app.use('/',(req,res)=>{
+//     res.send("hello")
+// })
+
+app.use('/',auth)
 
 //----- about route -----//
 app.use('/about',aboutRoute)

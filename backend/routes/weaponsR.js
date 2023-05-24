@@ -1,5 +1,5 @@
 const express =require('express')
-weaponsRoute =express.Router()
+const weaponsRoute = express.Router()
 
 weaponsRoute.get('/',(req,res)=>{
     res.send("weaponsRoute")
