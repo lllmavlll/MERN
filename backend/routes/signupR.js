@@ -33,12 +33,11 @@ signupRoute.post('/',async(req,res)=>{
                     cpassword:hashedConPassword,
                     email:email,
                 })
-           const newUser = await userResult.save()
-           if(newUser){
-            return  res.status(201).json({messege:"user saved"})
-           }
+            await userResult.save()
         
-    } catch (error) {
+            return  res.status(201).json({messege:"user saved"})
+         
+    } catch (error) {   
         console.log(error)
     }
 })
