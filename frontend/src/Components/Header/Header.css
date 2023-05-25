@@ -1,3 +1,69 @@
-h1{
-    font-weight: 600;
+:root{
+    ---color1:#1e2635;
+    ---color2:#0194eb;
+}
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(---color1);
+    position: relative;
+    
+}
+.Logo1{
+    padding: 5px 50px;
+    display: flex;
+}
+.Logo1 .LogoImg{
+    width: 94px;
+    margin-right: -25px;
+}
+.Logo1 .logoLInk{
+    text-decoration: none;
+}
+.Logo1 h1{
+    color: white;
+    font-size: 45px;
+}
+.Logo1 span{
+    color: var(---color2);
+    transition: .4s;
+}
+.Logo1 span:hover{
+    color: white;
+}
+.navLinks{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navLinks  li {
+    padding: 10px 0;
+    list-style: none;
+    margin-right: 50px;
+}
+.navLinks  li .navLink{
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+    text-decoration: none;
+    transition: .4s;
+
+}
+.navLinks  li .navLink:hover{
+    color: var(---color2);
+}
+.signButton{
+    border: none;
+    outline: none;
+    margin-right: 30px;
+    color: var(---color2);
+    border: 1px solid var(---color2);
+    background-color: transparent;
+    height: 30px;
+    width: 100px;
+    border-radius: 4px;
+    
 }

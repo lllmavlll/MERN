@@ -1,27 +1,25 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Header.css'
+import logoimg from '../Assets/imgs/LOGO1.png'
 
 const Header = () => {
   return (
-    <>
-    <div className='navbar'>
-      <div className='Logo'>
-      <h1>ma<span>V.GG</span></h1>
+    <div className='Navbar'>
+      <div className='Logo1'>
+        <img className='LogoImg'alt='' src={logoimg}/>
+      <Link className='logoLInk' to={""}><h1>av<span>zone</span></h1></Link>
       </div>
-      <div className='nav-links'>
-        <ul>
-          <li><Link to={"agents"}>agents</Link></li>
-          <li><Link to={'maps'}>maps</Link></li>
-          <li><Link to={'weapons'}>weapons</Link></li>
-          <li><Link to={'skins'}>skins</Link></li>
-        </ul>
+      <div className='navLinks'>
+          <li><Link className='navLink' to={"agents"}>agents</Link></li>
+          <li><Link className='navLink' to={'maps'}>maps</Link></li>
+          <li><Link className='navLink' to={'weapons'}>weapons</Link></li>
+          <li><Link className='navLink' to={'skins'}>skins</Link></li>
       </div>
-      <div className='nav-signup'>
-       <Link to={"signin"}><button className='nav-signup-btn'>Sign in</button></Link>
+      <div className='navSignup'>
+       <Link to={"signin"}><button className='signButton'>Sign in</button></Link>
       </div>
     </div>
-    </>
   )
 }
 

@@ -1,0 +1,85 @@
+:root{
+    ---color1:#1e2635;
+    ---color2:#0194eb;
+}
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(---color1);
+    position: relative;
+    
+}
+.Logo1{
+    padding: 5px 50px;
+    display: flex;
+}
+.Logo1 .LogoImg{
+    width: 94px;
+    margin-right: -25px;
+}
+.Logo1 .logoLInk{
+    text-decoration: none;
+}
+.Logo1 h1{
+    color: white;
+    font-size: 45px;
+}
+.Logo1 span{
+    color: var(---color2);
+    transition: .4s;
+}
+.Logo1 span:hover{
+    color: white;
+}
+.navLinks{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navLinks  li {
+    padding: 10px 0;
+    list-style: none;
+    margin-right: 50px;
+}
+.navLinks  li .navLink{
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+    text-decoration: none;
+    transition: .4s;
+
+}
+.navLinks  li .navLink:hover{
+    color: var(---color2);
+}
+.socials{
+    color: white;
+    display: flex;
+}
+.socials p{
+    margin-right: 20px;
+    text-transform: capitalize;
+}
+.socials li{
+    list-style: none;
+    padding-right: 20px;
+}
+.socials li a{
+    text-decoration: none;
+    color: var(---color2);
+    transition: .4s;
+}
+.socials li a:hover{
+    color: white;
+}
+.copyWrite{
+    background-color: var(---color1);
+    color: gray
+}
+.copyWrite p{
+    text-align: center;
+    padding:10px 0 20px;
+}
