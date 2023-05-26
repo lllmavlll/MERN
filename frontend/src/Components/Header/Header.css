@@ -3,11 +3,13 @@
     ---color2:#0194eb;
 }
 .Navbar{
+    position: sticky;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(---color1);
-    position: relative;
+    /* position: relative; */
+    top: 0;
     
 }
 .Logo1{
