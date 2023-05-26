@@ -14,8 +14,8 @@ const Footer = () => {
     <Link className='logoLInk' to={""}><h1>av<span>zone</span></h1></Link>
     </div>
     <div className='navLinks'>
-        <li><Link className='navLink' to={"agents"}>About </Link></li>
-        <li><Link className='navLink' to={'maps'}>support</Link></li>
+        <li><Link className='navLink' to={"about"}>About </Link></li>
+        <li><Link className='navLink' to={'support'}>support</Link></li>
         {/* <li><Link className='navLink' to={'weapons'}>polices</Link></li> */}
         {/* <li><Link className='navLink' to={'skins'}>skins</Link></li> */}
     </div>
