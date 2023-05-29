@@ -8,9 +8,9 @@ import Maps from './Components/Maps/Maps';
 import Skins from './Components/Skins/Skins';
 import Support from './Components/Support/Support';
 import Signup from './Components/Signup/Signup';
-import Signin from './Components/Signin/Signin';
 import Weapons from './Components/Weapons/Weapons';
 import Home from './Components/Home/Home';
+import Signin from './Components/Signin/Signin1';
 
 const App = () => {
   return (

@@ -38,7 +38,7 @@
     position: relative;
 
 }
-.signInContainer p{
+.signInContainer .SHeader{
     font-size: 26px;
     padding: 50px 0;
     font-weight: 600;

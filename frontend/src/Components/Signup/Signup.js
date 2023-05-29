@@ -11,7 +11,7 @@ const Signup = () => {
           <div className="div2">
               <img alt='' src={logo}/>
               <div className="signInContainer">
-                  <p>Sign up</p>
+                  <p className='SHeader'>Sign up</p>
                   {/* <input className='signInputs' type='text' placeholder='username '/>
                   <br/>
                   <input className='signInputs' type='password' placeholder='password'/>
@@ -30,11 +30,20 @@ const Signup = () => {
                   <Link className='signElinks'>can't sign in?</Link>
                   <br/>  
                   <Link className='signElinks'>create account</Link> */}
-                  <form>
+                  <form action='/signup' method='post'>
 
                   </form>
-
-                  
+                  <input className='signInputs' name='username' type='text' placeholder='username '/>
+                  <br/>
+                  <input className='signInputs' name='email' type='email' placeholder='email'/>
+                  <br/>
+                  <input className='signInputs' name='password' type='text' placeholder='password '/>
+                  <br/>
+                  <input className='signInputs' name='cpassword' type='password' placeholder='confirm password'/>
+                  <br/>
+                  <button type='submit' className='SignBtnn'>sign in</button>
+                  <br/>
+                 <p> already have an account<a href='/signin '> signin?</a></p> 
               </div>
             
           </div>

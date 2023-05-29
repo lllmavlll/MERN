@@ -1,6 +1,5 @@
 import React from 'react'
 import './Signin.css'
-import {Link} from 'react-router-dom'
 import logo from '../Assets/logos/logo_white.avif'
 
 
@@ -12,10 +11,10 @@ const Signin = () => {
           <div className="div2">
               <img alt='' src={logo}/>
               <div className="signInContainer">
-                  <p>Sign In</p>
-                  <input className='signInputs' type='text' placeholder='username '/>
+                  <p className='SHeader'>Sign In</p>
+                  <input className='signInputs' name='username' type='text' placeholder='username '/>
                   <br/>
-                  <input className='signInputs' type='password' placeholder='password'/>
+                  <input className='signInputs' name='password' type='password' placeholder='password'/>
                   <br/>
                   <ul>
                       <li className='fac'><i class="fa-brands fa-facebook"></i></li>
@@ -28,9 +27,8 @@ const Signin = () => {
                   <br/>   
                   <button className='SignBtnn'>sign in</button>
                   <br/>  
-                  <Link className='signElinks'>can't sign in?</Link>
-                  <br/>  
-                  <Link className='signElinks' to={'signup'}>create account</Link>
+                 
+                 <p className='newUserlink'>new user<a className='signElinks' href='/signup'>signup?</a></p>
 
                   
               </div>
