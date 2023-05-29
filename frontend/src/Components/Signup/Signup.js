@@ -2,6 +2,7 @@ import React from 'react'
 // import {Form, Link} from 'react-router-dom'
 import './Signup.css'
 import logo from '../Assets/logos/logo_white.avif'
+import { NavLink } from 'react-router-dom'
 
 
 const Signup = () => {
@@ -31,19 +32,18 @@ const Signup = () => {
                   <br/>  
                   <Link className='signElinks'>create account</Link> */}
                   <form action='/signup' method='post'>
-
-                  </form>
-                  <input className='signInputs' name='username' type='text' placeholder='username '/>
-                  <br/>
-                  <input className='signInputs' name='email' type='email' placeholder='email'/>
-                  <br/>
-                  <input className='signInputs' name='password' type='text' placeholder='password '/>
-                  <br/>
-                  <input className='signInputs' name='cpassword' type='password' placeholder='confirm password'/>
-                  <br/>
-                  <button type='submit' className='SignBtnn'>sign in</button>
-                  <br/>
-                 <p> already have an account<a href='/signin '> signin?</a></p> 
+                    <input required className='signInputs' autoComplete='off' name='username' type='text' placeholder='username '/>
+                    <br/>
+                    <input required className='signInputs' autoComplete='off' name='email' type='email' placeholder='email'/>
+                    <br/>
+                    <input required className='signInputs' autoComplete='off' name='password' type='password' placeholder='password '/>
+                    <br/>
+                    <input required className='signInputs' autoComplete='off' name='cpassword' type='password' placeholder='confirm password'/>
+                    <br/>
+                    <input type='submit' className='SignBtnn' value='sign up'/>
+                    <br/>
+                 <p className='newUserlink'> already have an account  <NavLink className='signElinks' to='/signin '> Login?</NavLink></p> 
+                 </form>
               </div>
             
           </div>

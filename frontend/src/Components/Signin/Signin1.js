@@ -1,6 +1,7 @@
 import React from 'react'
 import './Signin.css'
 import logo from '../Assets/logos/logo_white.avif'
+import { NavLink } from 'react-router-dom'
 
 
 
@@ -11,10 +12,11 @@ const Signin = () => {
           <div className="div2">
               <img alt='' src={logo}/>
               <div className="signInContainer">
+                <form action='/signin' method='post'>
                   <p className='SHeader'>Sign In</p>
-                  <input className='signInputs' name='username' type='text' placeholder='username '/>
+                  <input required className='signInputs' autoComplete='off' name='username' type='text' placeholder='username '/>
                   <br/>
-                  <input className='signInputs' name='password' type='password' placeholder='password'/>
+                  <input required className='signInputs' autoComplete='off' name='password' type='password' placeholder='password'/>
                   <br/>
                   <ul>
                       <li className='fac'><i class="fa-brands fa-facebook"></i></li>
@@ -25,12 +27,11 @@ const Signin = () => {
                   <input className='cbox' type="checkbox"/>
                   <label className='cboxLabel'>Stay signed in</label>
                   <br/>   
-                  <button className='SignBtnn'>sign in</button>
+                  <button type='submit' className='SignBtnn'>Login</button>
                   <br/>  
                  
-                 <p className='newUserlink'>new user<a className='signElinks' href='/signup'>signup?</a></p>
-
-                  
+                 <p className='newUserlink'>new user <NavLink className='signElinks' to='/signup'>signup?</NavLink></p>
+                </form>
               </div>
             
           </div>

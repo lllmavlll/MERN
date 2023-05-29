@@ -5,7 +5,8 @@ import logoimg from '../Assets/imgs/LOGO1.png'
 
 const Header = () => {
   return (
-    <div className='Navbar'>
+    <>
+    <div className='NavbarHead'>
       <div className='Logo1'>
         <img className='LogoImg'alt='' src={logoimg}/>
       <Link className='logoLInk' to={""}><h1>av<span>zone</span></h1></Link>
@@ -20,6 +21,7 @@ const Header = () => {
        <Link to={"signin"}><button className='signButton'>Sign in</button></Link>
       </div>
     </div>
+    </>
   )
 }
 

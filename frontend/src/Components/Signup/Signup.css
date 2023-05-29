@@ -122,7 +122,7 @@ color: white;
 .signInContainer input.cbox{
     width: 20px;
 }
-.signInContainer button.SignBtnn{
+.signInContainer .SignBtnn{
     border-radius: 5px;
     padding: 17px 0;
     border: none;
@@ -137,21 +137,21 @@ color: white;
 }
 .signInContainer .signElinks{
     text-decoration: none;
-    color:#786d66 ;
-    text-transform: uppercase;
-    font-size: 12px;
+    color:var(---color2) ;
+    text-transform: capitalize;
+    font-size: 15px;
     font-weight: 600;
     transition: .6s;
 }
 /* //////////////// HOVER ////////////////// */
 
-.signInContainer button.SignBtnn:hover{
+.signInContainer .SignBtnn:hover{
     background-color: var(---color2);
     color: white;
 
 }
-.signInContainer .signElinks:hover{
-    color:var(---color2)
+.signInContainer .newUserlink .signElinks:hover{
+    color:grey
 }
 @media (max-width: 768px){
     .signInContainer{
