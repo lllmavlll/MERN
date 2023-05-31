@@ -1,6 +1,6 @@
 import React from 'react'
 import './Support.css'
-import supBanner from '../Assets/imgs/supBGI.webp'
+import supBanner from '../Assets/imgs/supBgi.jpg'
 
 
 const Support =()=>{

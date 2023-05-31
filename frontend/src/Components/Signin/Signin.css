@@ -1,7 +1,10 @@
 :root{
     ---color1:#1e2635;
     ---color2:#0194eb;
+    ---color3:#222c3b;
+
 }
+
 .bgi{
     background: url(../Assets/imgs/signup2.jpg);
 
@@ -22,6 +25,7 @@
     justify-content: center;
     flex-direction: column;
     position: relative;
+
 }
 .div2 img{
     position: absolute;
@@ -34,31 +38,34 @@
     margin: 30px 0;
     width: 460px;
     height: 590px;
-    background-color: #fff;
+    background-color: var(---color3);
     transition: 0.6s;
     position: relative;
+    box-shadow:  0 5px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
 
 }
 .signInContainer .SHeader{
     font-size: 26px;
     padding: 50px 0;
     font-weight: 600;
+    color: white;
 }
 .signInContainer .signInputs{
     width: 75%;
     height: 50px;
     border-radius: 4px;
     margin-bottom: 20px;
-    background-color: rgb(226, 226, 226);
+    background-color: var(---color1);
     outline: none;
     border: none;
     text-align: center;
     font-size: 14px;
     font-weight: 600;
     letter-spacing: .5px;
-    border: 2px solid rgb(255, 255, 255) ;
-
-    
+    color: white;
+    border: 2px solid var(---color1) ;
+    box-shadow:  0 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .signInContainer .signInputs::placeholder{
@@ -68,15 +75,12 @@
     letter-spacing: .5px;
     font-size: 11px;
     padding-left: 20px;
-    color:rgb(66, 66, 66)
-    
-    
+    color: lightblue;
 }
 .signInContainer .signInputs:focus{
-    border: 2px solid rgb(66, 66, 66) ;
-    background-color: white;
+    border: 2px solid var(---color2) ;
 }
-.signInContainer ul{
+/* .signInContainer ul{
     display: flex;
     list-style: none;
     justify-content: center;
@@ -111,30 +115,34 @@
 }
 .signInContainer ul li i{
 color: white;
-}
+} */
 
 .signInContainer .cboxLabel{
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 0.5px;
     padding-left: 10px;
     font-weight: 600;
+    margin: 20px 0;
+    color: lightblue;
 
 }
-.signInContainer input.cbox{
-    width: 20px;
-}
+
 .signInContainer .SignBtnn{
     border-radius: 5px;
     padding: 17px 0;
     border: none;
     margin: 20px;
     cursor: pointer;
+    color: white;
     width: 100px;
     font-size: 13px;
     letter-spacing: .5px;
     font-weight: 600;
     text-transform: uppercase;
+    background-color: var(---color2);
     transition: .3s;
+    box-shadow:  0 5px 10px rgba(0, 0, 0, 0.4);
+
 }
 .signInContainer .signElinks{
     text-decoration: none;
@@ -144,29 +152,30 @@ color: white;
     font-weight: 600;
     transition: .6s;
 }
-/* //////////////// HOVER ////////////////// */
-
-.signInContainer button.SignBtnn:hover{
-    background-color: var(---color2);
-    color: white;
-
-}
 .signInContainer .signElinks:hover{
-    color:var(---color2)
+    text-decoration: underline;
 }
+.signInContainer p{
+    color: lightblue;
+    font-size: 14px;
+}
+
 @media (max-width: 768px){
     .signInContainer{
         width: 70%;
         height: 450px;
     }
-    .div2 img{
-        width: 80PX;
-        left: 10PX;
-        top: 510px;
-    }
-    .signInContainer p{
+    .signInContainer .SHeader{
+        padding: 40px 0;
         font-size: 20px;
-        padding: 30px;
+        margin-bottom: 0;
+    }
+    .signInContainer .newP{
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .signInContainer .cboxLabel{
+        font-size: 12px;
     }
     .signInContainer .signInputs{
         height: 35px;
@@ -178,9 +187,11 @@ color: white;
         width: 25px;
         font-size: 16px;
     }
-    .signInContainer button.SignBtnn{
+    .signInContainer .SignBtnn{
         font-size: 10px;
-        padding: 12px;
+        padding: 10px;
+        height: 30px;
+        margin: 10px;
     }
     .signInContainer .signElinks{
         font-size: 10px;

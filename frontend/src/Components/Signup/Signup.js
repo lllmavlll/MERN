@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 // import {Form, Link} from 'react-router-dom'
 import './Signup.css'
-import logo from '../Assets/logos/logo_white.avif'
+import '../Signin/Signin.css'
+// import logo from '../Assets/logos/logo_white.avif'
 import { NavLink, useNavigate,   } from 'react-router-dom'
 
 
@@ -55,7 +56,7 @@ const Signup = () => {
     <>
      <div className="signUpBgi">
           <div className="div2">
-              <img alt='' src={logo}/>
+              {/* <img alt='' src={logo}/> */}
               <div className="signInContainer">
                   <p className='SHeader'>Sign up</p>
                   <form  method='POST'>
@@ -101,7 +102,7 @@ const Signup = () => {
                     <br/>
                     <input type='submit' onClick={saveData} className='SignBtnn' value='sign up'/>
                     <br/>
-                 <p className='newUserlink'> already have an account  <NavLink className='signElinks' to='/signin '> Login?</NavLink></p> 
+                 <p className='newP'> already have an account  <NavLink className='signElinks' to='/signin '> Login?</NavLink></p> 
                  </form>
               </div>
             

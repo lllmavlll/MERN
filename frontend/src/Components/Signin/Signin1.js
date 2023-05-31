@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Signin.css'
-import logo from '../Assets/logos/logo_white.avif'
+// import logo from '../Assets/logos/logo_white.avif'
 import { NavLink, useNavigate } from 'react-router-dom'
 
 
@@ -38,7 +38,7 @@ const Signin = () => {
     <>
     <div className="bgi">
           <div className="div2">
-              <img alt='' src={logo}/>
+              {/* <img alt='' src={logo}/> */}
               <div className="signInContainer">
                 <form  method='POST'>
                   <p className='SHeader'>Sign In</p>
@@ -72,7 +72,7 @@ const Signin = () => {
                   <button type='submit' onClick={loginUser} className='SignBtnn'>Login</button>
                   <br/>  
                  
-                 <p className='newUserlink'>new user <NavLink className='signElinks' to='/signup'>signup?</NavLink></p>
+                 <p className='newP'>new user <NavLink className='signElinks' to='/signup'>signup?</NavLink></p>
                 </form>
               </div>
             
