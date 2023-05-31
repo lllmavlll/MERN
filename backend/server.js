@@ -18,12 +18,7 @@ const PORT = process.env.PORT || 5001
 //------ converting into jsonObject -----//
 app.use(express.json())
 
-//----- landing page -----//
-
-// app.use('/',(req,res)=>{
-//     res.send("hello")
-// })
-
+//----- auth route -----//
 app.use('/',auth)
 
 //----- about route -----//

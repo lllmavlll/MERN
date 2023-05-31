@@ -1,7 +1,8 @@
 const express =require('express')
 const aboutRoute =express.Router()
+const authenticate =require('../middleware/authenticate')
 
-aboutRoute.get('/',(req,res)=>{
+aboutRoute.get('/',authenticate,(req,res)=>{
     res.send("about")
 })
 

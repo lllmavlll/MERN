@@ -64,13 +64,11 @@ auth.post('/signin',async(req,res)=>{
             // return res.status(404).json({ message:"user not found"})
           return   res.status(404).send("invalid credentials")
         }
-    
         
         //----- matching Cridentials -----//
         const matchPassword = await  bcrypt.compare(password,existingUser.password)
         if(!matchPassword){
          return   res.status(400).send("invalid credentials")
-            
         }
 
         //----- generating token -----//
@@ -78,7 +76,7 @@ auth.post('/signin',async(req,res)=>{
         console.log(token)
         
         //----- creating JWT (jasonWebToken) -----//
-        res.cookie("jwt-token",token,{
+        res.cookie("jwtoken",token,{
             expires:new Date(Date.now()+25892000000),
             httpOnly:true
         })
