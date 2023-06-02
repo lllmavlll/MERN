@@ -2,6 +2,8 @@ const express =require('express')
 const auth =express.Router()
 const userModel =require('../model/userSchema')
 const bcrypt = require('bcrypt');
+const authenticate =require('../middleware/authenticate')
+
 const jwt = require('jsonwebtoken')
 
 //----- landing page -----//
@@ -87,6 +89,11 @@ auth.post('/signin',async(req,res)=>{
      return   res.status(500).json({message:"something went wrong"})
     }
 
+})
+
+//----- support page endpoint -----//
+auth.get('/support', authenticate,(req,res)=>{
+    res.send(req.rootUser)
 })
 
 module.exports = auth

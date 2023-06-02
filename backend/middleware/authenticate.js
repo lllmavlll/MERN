@@ -11,10 +11,10 @@ const authenticate = async(req,res,next)=>{
     const verifyJwt = jwt.verify(token,process.env.SECRET_KEY);
     
     //----- if token verified, identifying the token (of which user) -----//
-    const rootUser =  await userModel.findOne({_id:verifyJwt._id,"tokens:token":token});
+    const rootUser =  await userModel.findOne({_id:verifyJwt._id,"tokens.token":token});
     
     //----- thrrow an error if user is not verified -----//
-    if(!rootUser){ throw new Error('user not found')};
+    if(!rootUser){ throw new Error('user not found')}
 
     req.token = token;
     req.rootUser = rootUser;

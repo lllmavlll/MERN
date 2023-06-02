@@ -33,14 +33,7 @@ app.use('/maps',mapsRoute)
 //----- weapons route -----//
 app.use('/weapons',weaponsRoute)
 
-//----- signin route -----//
-// app.use('/signin',signinRoute)
-
-//----- signup route -----//
-// app.use('/signup',signupRoute)
-
-
-
+//----- server listen -----//
 app.listen(PORT,()=>{
     console.log(`server running on https://localhost:${PORT}`)
 })
