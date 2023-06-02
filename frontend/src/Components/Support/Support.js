@@ -1,37 +1,37 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Support.css'
 import supBanner from '../Assets/imgs/supBgi.jpg'
-import {useNavigate}  from 'react-router-dom'
+// import {useNavigate}  from 'react-router-dom'
 
 
 const Support =()=>{
-   const navigate =useNavigate()
 
-   const callSupPage =async()=>{
+   
+   const [userData , setUserData]=useState({})
+
+//----- call function to check if user loged in -----//
+   const callPage =async()=>{
       try { 
-         const res = await fetch ('/support',{
+         const res = await fetch ('/getdata',{
             method:"GET",
             headers:{
-               Accept:"application/json",
                "Content-Type":"application/json"
             },
-            credentials:'include'
          });
          const data = await res.json();
          console.log(data)
+         setUserData(data)
           if(!res.status===200){
             const error = new Error(res.error)
             throw error;
-
           }
       } catch (error) {
          console.log(error)   
-         navigate('/signin')      
       }
    }
-
+   //----- useState to get data of a user through token -----//
    useEffect(()=>{
-      callSupPage()
+      callPage()
    })
 
    return (
@@ -42,8 +42,8 @@ const Support =()=>{
                <div className="supBanner">
                   <img alt=''  src={supBanner}/>
                </div>
-                  <input autoComplete='off'  placeholder='username'name='username' className="supName" type='text'/>
-                  <input autoComplete='off'  placeholder='email' name='email' className="supEmail" type='email'/>
+                  <input autoComplete='off' value={userData.username} placeholder='username'name='username' className="supName" type='text'/>
+                  <input autoComplete='off' value={userData.email} placeholder='email' name='email' className="supEmail" type='email'/>
                   <textarea autoComplete='off'  placeholder='enter your message' name='issue' className="supMessage" type='text'/>
                   <button type='submit'   className="supSubBtn" >submit</button>
            </div>

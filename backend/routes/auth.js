@@ -93,10 +93,10 @@ auth.post('/signin',async(req,res)=>{
 
 })
 
-//----- support page endpoint -----//
-auth.get('/support', authenticate,(req,res)=>{
-    console.log('my sup')
+//----- to get userData if user logins, and to access userData from -----//
+auth.get('/getdata', authenticate,(req,res)=>{
     res.send(req.rootUser)
 })
+
 
 module.exports = auth

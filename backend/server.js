@@ -1,13 +1,6 @@
 const express = require('express')
-const aboutRoute = require('./routes/aboutR')
-const agentsRoute = require('./routes/agentsR')
-const mapsRoute = require('./routes/mapsR')
-const weaponsRoute = require('./routes/weaponsR')
-// const signinRoute = require('./routes/signinR')
-// const signupRoute = require('./routes/signupR')
 const auth = require('./routes/auth')
 const dotenv =require('dotenv')
-const userModel =require('./model/userSchema')
 require('./db/mongo')  //----- mongo db path import
 const app = express()
 
@@ -20,18 +13,6 @@ app.use(express.json())
 
 //----- auth route -----//
 app.use('/',auth)
-
-//----- about route -----//
-app.use('/about',aboutRoute)
-
-//----- agents route -----//
-app.use('/agents',agentsRoute)
-
-//----- maps route -----//
-app.use('/maps',mapsRoute)
-
-//----- weapons route -----//
-app.use('/weapons',weaponsRoute)
 
 //----- server listen -----//
 app.listen(PORT,()=>{
