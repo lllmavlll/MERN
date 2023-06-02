@@ -98,5 +98,35 @@ auth.get('/getdata', authenticate,(req,res)=>{
     res.send(req.rootUser)
 })
 
+//----- support end points -----//
+auth.post('/support',authenticate,async(req,res)=>{
+    try {
+        const {username, email, message}= req.body
+
+        //----- if the input field empty throw error -----//
+        if(!username || !email || !message){
+            console.log(' error in support form')
+            return res.json({error: "please fill  all the fields"})
+        }
+
+        //----- verifying which user sent message based on _id -----//
+        const supportFiledData = await userModel.findOne({_id:req.userID})
+
+        if(supportFiledData){
+
+            const userMessage = await supportFiledData.addMessages(username, email, message ) 
+            
+            await userMessage.save
+            res.status(201).json({ message:"message sent successfully!"})
+        }
+
+    } catch (error) {
+        console.log(error)
+    }
+})
+auth.get('/support',(req,res)=>{
+    res.send('support route')
+})
+
 
 module.exports = auth
