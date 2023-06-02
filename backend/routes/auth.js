@@ -3,6 +3,8 @@ const auth =express.Router()
 const userModel =require('../model/userSchema')
 const bcrypt = require('bcrypt');
 const authenticate =require('../middleware/authenticate')
+const cookieParser = require("cookie-parser");
+auth.use(cookieParser());
 
 const jwt = require('jsonwebtoken')
 
@@ -93,6 +95,7 @@ auth.post('/signin',async(req,res)=>{
 
 //----- support page endpoint -----//
 auth.get('/support', authenticate,(req,res)=>{
+    console.log('my sup')
     res.send(req.rootUser)
 })
 
