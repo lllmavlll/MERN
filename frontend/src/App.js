@@ -11,6 +11,7 @@ import Signup from './Components/Signup/Signup';
 import Weapons from './Components/Weapons/Weapons';
 import Home from './Components/Home/Home';
 import Signin from './Components/Signin/Signin1';
+import Logout from './Components/Logout/Logout';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Route path='weapons' element={<Weapons/>}/>
         <Route path='signin' element={<Signin/>}/>
         <Route path='signup' element={<Signup/>}/>
+        <Route path='logout' element={<Logout/>}/>
     </Routes>
     <Footer/>
    </BrowserRouter>

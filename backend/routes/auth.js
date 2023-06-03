@@ -128,5 +128,10 @@ auth.get('/support',(req,res)=>{
     res.send('support route')
 })
 
+//----- logout end point -----//
+auth.get('/logout',(req,res)=>{
+    res.clearCookie('jwtoken',{path:'/'})
+    res.status(200).send('logout route')
+})
 
 module.exports = auth
