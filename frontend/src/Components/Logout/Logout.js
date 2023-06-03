@@ -1,7 +1,12 @@
-import React,{useEffect} from 'react'
+import React,{useContext, useEffect} from 'react'
 import {useNavigate} from  'react-router-dom'
+import { userContext } from '../../App'
+
 
 const Logout = () => {
+
+  //----- useContext to hide signin button after sigining in -----//
+  const {state, dispatch } = useContext(userContext);
 
 const navigate = useNavigate()
 
@@ -15,6 +20,7 @@ const navigate = useNavigate()
               },
               credentials:"include"
             }).then((res)=>{
+              dispatch({type:'USER',payload:false})//----- from useContetxt -----//
               navigate('/signin',{replace:true})
               if(!res.status===200){
                 const error = new Error(res.error)

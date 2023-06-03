@@ -1,11 +1,14 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './Signin.css'
 // import logo from '../Assets/logos/logo_white.avif'
 import { NavLink, useNavigate } from 'react-router-dom'
 
-
+import { userContext } from '../../App'
 
 const Signin = () => {
+
+  //----- useContext to hide signin button after sigining in -----//
+  const {state, dispatch} = useContext(userContext);
   
   const navigate = useNavigate()
   const [email, setEmail]= useState('')
@@ -28,6 +31,7 @@ const Signin = () => {
        window.alert(`invalid cresential`)
        console.log(`invalid cresential`)
       }else{
+      dispatch({type:'USER', payload:true})//----- from useContetxt -----//
       window.alert(`login succesfull!`)
       navigate('/')
     }

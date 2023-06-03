@@ -1,11 +1,12 @@
-import React ,{ useEffect , useState}from 'react'
+import React ,{ useContext, useEffect , useState}from 'react'
 import { Link} from 'react-router-dom'
 import './Header.css'
 import logoimg from '../Assets/imgs/LOGO1.png'
+import { userContext } from '../../App'
  
 const Header = () => {
 
-
+   //----- useState to get username when logged in
   const [userData , setUserData] = useState('')
 
   //----- call function to check if user loged in -----//
@@ -34,6 +35,31 @@ const Header = () => {
      },[])
 
 
+   //----- useContext to hide signin button after sigining in -----//
+    const {state, dispatch } = useContext(userContext);
+
+    const RenderMenu = ()=>{
+     //----- if user is logged in show this elements on the nav bar -----//
+     if(state){
+        return(
+           <>
+              <div className='navSignup'>
+                 <i class="fa-solid fa-user"></i>
+                 <span className='userName'>{userData.username}</span>
+                 <Link to={"logout"}><button className='signButton'>LogOut</button></Link>
+              </div>
+           </>
+           )
+
+     }else{
+     //----- if user is NOT logged in show this elements on the nav bar -----//
+        return(
+           <>
+              <Link to={"signin"}><button className='signButton'>Sign in</button></Link>
+           </>
+        )
+     }
+  }
 
   return (
     <>
@@ -48,11 +74,7 @@ const Header = () => {
           <li><Link className='navLink' to={'weapons'}>weapons</Link></li>
           <li><Link className='navLink' to={'skins'}>skins</Link></li>
       </div>
-      <div className='navSignup'>
-       <Link to={"signin"}><button className='signButton'>Sign in</button></Link>
-       <Link to={"logout"}><button className='signButton'>LogOut</button></Link>
-      </div>
-       {/* <h3 className='userName'>{userData.username}</h3> */}
+      <RenderMenu/>
     </div>
     </>
   )
