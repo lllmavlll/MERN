@@ -46,7 +46,7 @@ const App = () => {
   return (
    <>
    <userContext.Provider value={{state, dispatch}}>
-   <BrowserRouter>
+   <BrowserRouter >
     <Header/>
     <Routing/>
     <Footer/>

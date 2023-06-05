@@ -2,13 +2,14 @@
     ---color1:#1e2635;
     ---color2:#0194eb;
 }
-.Navbar{
-    display: flex;
+.FooterMain{
+    display: grid;
+    grid-template-columns: auto auto auto;
     align-items: center;
     justify-content: space-between;
     background-color: var(---color1);
     position: relative;
-    box-shadow:  0px -5px 20px #19202f;;
+    box-shadow:  0px -5px  15px #19202f;;
 
     
 }
@@ -80,13 +81,14 @@
 .copyWrite{
     background-color: var(---color1);
     color: gray;
-    height: 40px;
+    height: 60px;
 }
 .copyWrite p{
     text-align: center;
+    padding-top: 20px;
 }
 @media (max-width: 768px){
-    .Navbar{
+    .FooterMain{
         display: flex;
         flex-direction: column;
     }

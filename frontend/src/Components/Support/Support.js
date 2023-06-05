@@ -19,7 +19,7 @@ const Support =()=>{
             },
          });
          const data = await res.json();
-         console.log(data)
+         // console.log(data)
          setUserData({...userData,username:data.username,email:data.email})
           if(!res.status===200){
             const error = new Error(res.error)
