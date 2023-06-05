@@ -35,3 +35,20 @@
     box-shadow:  0 10px 10px rgba(0, 0, 0, 0.4);
 
 }
+@media (max-width: 768px){
+    .AboutCentre{
+    padding: 20px 0;
+    width: 85%;
+    }
+    .AboutCentre .AboutH1 h1 {
+        font-size: 50px;
+        padding: 15px 0;
+    }
+    .GridMain{
+        grid-template-columns: 100%;
+        gap: 15px;
+    }
+    .GridImg img{
+        width: 100%;
+    }
+}

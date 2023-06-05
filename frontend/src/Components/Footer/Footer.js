@@ -9,13 +9,13 @@ const Footer = () => {
   return (
     <>
     <div className='Navbar'>
-    <div className='Logo1'>
+    <div className='Logo2'>
       <img className='LogoImg'alt='' src={logoimg}/>
     <Link className='logoLInk' to={""}><h1>av<span>zone</span></h1></Link>
     </div>
-    <div className='navLinks'>
-        <li><Link className='navLink' to={"about"}>About </Link></li>
-        <li><Link className='navLink' to={'support'}>support</Link></li>
+    <div className='navLinks1'>
+        <li><Link className='navLink1' to={"about"}>About </Link></li>
+        <li><Link className='navLink1' to={'support'}>support</Link></li>
         {/* <li><Link className='navLink' to={'weapons'}>polices</Link></li> */}
         {/* <li><Link className='navLink' to={'skins'}>skins</Link></li> */}
     </div>

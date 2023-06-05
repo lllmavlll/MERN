@@ -12,41 +12,41 @@
 
     
 }
-.Logo1{
+.Logo2{
     padding: 5px 50px;
     display: flex;
 }
-.Logo1 .LogoImg{
+.Logo2 .LogoImg{
     width: 94px;
     margin-right: -25px;
 }
-.Logo1 .logoLInk{
+.Logo2 .logoLInk{
     text-decoration: none;
 }
-.Logo1 h1{
+.Logo2 h1{
     color: white;
     font-size: 45px;
 }
-.Logo1 span{
+.Logo2 span{
     color: var(---color2);
     transition: .4s;
 }
-.Logo1 span:hover{
+.Logo2 span:hover{
     color: white;
 }
-.navLinks{
+.navLinks1{
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.navLinks  li {
+.navLinks1  li {
     padding: 10px 0;
     list-style: none;
     margin-right: 50px;
 }
-.navLinks  li .navLink{
+.navLinks1  li .navLink1{
     color: white;
     text-transform: capitalize;
     font-size: 20px;
@@ -54,7 +54,7 @@
     transition: .4s;
 
 }
-.navLinks  li .navLink:hover{
+.navLinks1  li .navLink1:hover{
     color: var(---color2);
 }
 .socials{
@@ -90,19 +90,19 @@
         display: flex;
         flex-direction: column;
     }
-    .Logo1{
+    .Logo2{
         padding: 15px 50px 5px 50px;
         display: flex;
     }
-    .Logo1 .LogoImg{
+    .Logo2 .LogoImg{
         width: 75px;
         margin-right: -20px;
     }
-    .Logo1 h1{
+    .Logo2 h1{
         color: white;
         font-size: 40px;
     }
-    .navLinks  li{
+    .navLinks1  li{
         padding: 15px ;
         margin-right: 0;
     }
