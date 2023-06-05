@@ -19,7 +19,7 @@ const Header = () => {
               },
            });
            const data = await res.json();
-           console.log(data)
+         //   console.log(data)
            setUserData(data)
             if(!res.status===200){
               const error = new Error(res.error)
