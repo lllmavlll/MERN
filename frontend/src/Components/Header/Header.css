@@ -66,21 +66,25 @@
     justify-content: center;
 }
 .navSignup i{
-    margin-right: 5px;
-    font-size: 24px;
+    margin-right: 8px;
+    font-size: 18px;
     color: var(---color2);
     transition: .4s;
+    cursor: pointer;
 }
 .navSignup span{
     margin-right: 15px;
-    font-size: 34px;
+    font-size: 28px;
     color: var(---color2);
     transition: .4s;
+    cursor: pointer;
     
 }
-.navSignup i:hover{
+/* .navSignup i:hover{
     color: white;
-
+} */
+.navSignup span:hover{
+    text-decoration: underline;
 }
 .signButton{
     border: none;
@@ -95,8 +99,7 @@
     transition: .4s;
     
 }
-.signButton:hover{
+/* .signButton:hover{
     color: white;
     border: 1px solid white;
-
-}
+} */

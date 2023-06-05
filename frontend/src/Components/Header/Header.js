@@ -46,7 +46,8 @@ const Header = () => {
               <div className='navSignup'>
                  <i class="fa-solid fa-user"></i>
                  <span className='userName'>{userData.username}</span>
-                 <Link to={"logout"}><button className='signButton'>LogOut</button></Link>
+                 <Link to={"logout"}><button className='signButton'>log out</button></Link>
+                 {/* <Link to={"logout"}><button className='signButton'><i class="fa-solid fa-right-from-bracket"></i></button></Link> */}
               </div>
            </>
            )
