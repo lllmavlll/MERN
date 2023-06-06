@@ -1,9 +1,11 @@
 import React from 'react'
 import './Home.css'
+import { NavLink } from 'react-router-dom'
 import mainVid from '../Assets/vids/homePage.mp4'
 import valGameplay from '../Assets/vids/VALORANT_gplay.mp4'
 import valorant from '../Assets/logos/val-png.png'
-
+import jett from '../Assets/AgentsPng/jett.png'
+  
 const Home = () => {
   return (
     <>
@@ -20,6 +22,40 @@ const Home = () => {
           </div>
         </div>
 
+        <section className='HomeAgentSection'>
+          <div className='agentSectionDiv'>
+            <div className='ASD1'>
+              <img src={jett} alt=''/>
+            </div>
+            <div className='ASD2'>
+              <h1>
+                <b>
+                  YOUR <br/> AGENTS
+                </b>
+              </h1>
+              <h4>CREATIVITY IS YOUR GREATEST WEAPON.</h4>
+              <p>
+                 More than guns and bullets, you’ll choose an Agent 
+                 armed with adaptive, swift, and lethal abilities that
+                 create opportunities to let your gunplay shine. No two
+                 Agents play alike, just as no two highlight reels will look the same.
+              </p>
+             <NavLink to='/agents'><button> View All Agents</button></NavLink>
+            </div>
+          </div>
+        </section>
+
+        <section className='MapAgentSection'>
+          <div className='mapSectionDiv'>
+            <h1>
+              <b>Your Maps</b>
+            </h1>
+            <h4>FIGHT AROUND THE WORLD</h4>
+            <p>Each map is a playground to showcase your creative thinking. Purpose-built for team strategies, spectacular plays, and clutch moments. Make the play others will imitate for years to come.</p>
+            <NavLink to='/maps'><button> View All Maps</button></NavLink>
+          </div>
+        </section>
+
         <div className='valMainDiv'>
           <div className='valoBan '>
             <div className='valBanInputs'>
@@ -32,7 +68,7 @@ const Home = () => {
             </div>
           </div>
          
-          <div className='valoBan2'>
+          <section className='valoBan2'>
             <h1 className='valBanH1'><b>WE ARE VALORANT</b></h1>
            <div className='valoBan2Div1'>
               <div className='gplay'>
@@ -44,7 +80,10 @@ const Home = () => {
                 <source src={valGameplay}/>
               </video>
             </div>
-          </div>
+          </section>
+          <section>
+
+          </section>
         </div>
       </div>
     </>

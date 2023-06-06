@@ -131,7 +131,7 @@
 
  .valBanInputs button:hover{
     background-color: #e3dad1;
-    color: var(---homecol1);
+    color: black;
 }
 .valoBan2 {
     background:url(../Assets/bg/valbg.jpeg);
@@ -145,6 +145,8 @@
     font-size: 100px;
     padding: 60px 0 10px;
     font-weight: 600;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+
     text-align: center;
 }
 
@@ -196,12 +198,120 @@ font-weight: 600;
     justify-content: center;
     border-radius: 30px;
     width: 20%;
-    background-color: rgba(0, 0, 0, 0.4);
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+
 }
+.HomeAgentSection{
+    background: url(../Assets/bg/val_BGI.jpg);
+    }
+.agentSectionDiv{
+    display: grid;
+    grid-template-columns: 50% 40%;
+    width: 100%;
+    height: 86vh;
+    padding: 70px 0;
+}
+.ASD1{
+    padding: 0 0 0 300px;
 
-
-
-
+}
+.ASD1 img{
+    width: 400px;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.ASD2 h1{
+    font-size: 100px;
+    line-height: .9;
+    color: white;
+    margin-bottom: 40px;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.ASD2 h4{
+    font-size: 22px;
+    line-height: .9;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.ASD2 p{
+    font-size: 17px;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.ASD2 button{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid var(---homecol1);
+    background: var(---homecol1);
+    color: white;
+    border-radius: 4px;
+    transition: .6s;
+    font-size: 14px;
+    font-weight: 600;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+.ASD2 button:hover{
+    background-color: #e3dad1;
+    color:black;
+}
+.MapAgentSection{
+    background: url(../Assets/bg/mapsBg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mapSectionDiv{
+    width: 100%;
+    height: 86vh;
+    padding: 10% 20%;
+}
+.mapSectionDiv h1{
+    font-size: 100px;
+    line-height: .9;
+    color: white;
+    margin-bottom: 40px;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.mapSectionDiv h4{
+    font-size: 22px;
+    line-height: .9;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.mapSectionDiv p{
+    width: 300px;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.mapSectionDiv button{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid var(---homecol1);
+    background: var(---homecol1);
+    color: white;
+    border-radius: 4px;
+    transition: .6s;
+    font-size: 14px;
+    font-weight: 600;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+.mapSectionDiv button:hover{
+    background-color: #e3dad1;
+    color:black;
+}
 
 
 
