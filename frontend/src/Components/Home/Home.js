@@ -48,7 +48,7 @@ const Home = () => {
         <section className='MapAgentSection'>
           <div className='mapSectionDiv'>
             <h1>
-              <b>Your Maps</b>
+              <b>YOUR MAPS</b>
             </h1>
             <h4>FIGHT AROUND THE WORLD</h4>
             <p>Each map is a playground to showcase your creative thinking. Purpose-built for team strategies, spectacular plays, and clutch moments. Make the play others will imitate for years to come.</p>
