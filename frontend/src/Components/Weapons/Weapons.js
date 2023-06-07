@@ -6,9 +6,14 @@ const Weapons = () => {
 
 
   return (
-    <div>
-      <h1>Weapons</h1>
+    <>
+    <div className='wepMain'>
+      <div  style={{minHeight:'85vh'}} className='wepBG'>
+        <h1>Weapons</h1>
+      
+      </div>
     </div>
+    </>
   )
 }
 

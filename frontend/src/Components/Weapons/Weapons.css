@@ -1,0 +1,11 @@
+.wepMain{
+    position: relative;
+}
+.wepBG{
+    background: url(../Assets/bg/whiteBG1.avif);
+    background-size: cover;
+  
+}
+.wepBG h1{
+    color: black
+}
