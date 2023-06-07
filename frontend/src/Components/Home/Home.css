@@ -143,10 +143,10 @@
 .valoBan2 .valBanH1{
     color:rgb(52, 52, 52);
     font-size: 100px;
-    padding: 60px 0 10px;
+    padding: 60px 25% 10px;
     font-weight: 600;
     text-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
+    /* text-align: center; */
 }
 
 .valoBan2Div1{
@@ -288,22 +288,6 @@ font-weight: 600;
     background-color: #e3dad1;
     color:black;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 768px){
     .homeDiv2{
