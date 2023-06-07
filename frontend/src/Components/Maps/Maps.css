@@ -112,6 +112,12 @@
         height: 100%;
         margin: 0 ;
     }
+    .mapCard h1{
+        bottom: -10px;
+        right: 0;
+        font-size: 24px;
+        padding: 5px ;
+    }
 
 
 }

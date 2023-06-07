@@ -57,6 +57,8 @@ const Header = () => {
         return(
            <>
               <div className='navSignup'>
+              <i class="fa-solid fa-user"></i>
+                 <span className='userName'>{userData.username}</span>
               <Link to={"signin"}><button className='signButton'>Sign in</button></Link>
               </div>
 
@@ -73,9 +75,9 @@ const Header = () => {
       <Link className='logoLInk' to={""}><h1>av<span>zone</span></h1></Link>
       </div>
       <div className='navLinks'>
-          <li><Link className='navLink' to={"agents"}>agents</Link></li>
           <li><Link className='navLink' to={'maps'}>maps</Link></li>
           <li><Link className='navLink' to={'weapons'}>weapons</Link></li>
+          <li><Link className='navLink' to={"agents"}>agents</Link></li>
           <li><Link className='navLink' to={'skins'}>skins</Link></li>
       </div>
       <RenderMenu/>
