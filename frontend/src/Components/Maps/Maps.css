@@ -1,6 +1,7 @@
 .MapSec-1{
     background: url(../Assets/bg/blueBG.png);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .mapGrid{
@@ -33,7 +34,9 @@
 .MapSec-2{
     background: url(../Assets/bg/valbg.jpeg);
     background-size: cover;
- padding: 0 5% 20px ;
+    padding: 0 5% 20px ;
+    background-attachment: fixed;
+
 }
 .caros{
     padding: 150px 20px;

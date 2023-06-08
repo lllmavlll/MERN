@@ -1,11 +1,49 @@
 .wepMain{
-    position: relative;
+    background: url(../Assets/bg/whiteBG1.avif);
+    background-attachment: fixed;
+
+}
+.sec1h{
+    color: black;
+    font-size: 80px;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4); 
+    padding-left: 5%;
+    padding-top: 30px;
 }
 .wepBG{
-    background: url(../Assets/bg/whiteBG1.avif);
     background-size: cover;
+    padding-left: 5%;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 10%;
+    padding-bottom: 60px;
   
 }
 .wepBG h1{
-    color: black
+    color: black;
+    font-size: 80px;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+
+}
+.wepBG p{
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+}
+
+.wepG2 img{
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+.sec2grid{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+}
+.sec2grid{
+    width: 100%;
+    height: 600px;
+}
+.sec2grid img{ 
+    width: 80%;
 }
