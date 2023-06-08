@@ -9,6 +9,16 @@ import frenzy from '../Assets/weapons/frenzy.png'
 import ghost from '../Assets/weapons/ghost.png'
 import stinger from '../Assets/weapons/stinger.png'
 import spec from '../Assets/weapons/spec.png'
+import bucky from '../Assets/weapons/bucky.png'
+import judge from '../Assets/weapons/judge.png'
+import phantom from '../Assets/weapons/phantom.png'
+import bulldog from '../Assets/weapons/bulldog.png'
+import gaurdian from '../Assets/weapons/gaurdian.png'
+import awp from '../Assets/weapons/awp.png'
+import mar from '../Assets/weapons/mar.png'
+import ares from '../Assets/weapons/ares.png'
+import odin from '../Assets/weapons/odin.png'
+import vandal from '../Assets/weapons/vandal.png'
 
 
 
@@ -42,7 +52,17 @@ const Weapons = () => {
             <WeaponCard title='Its high-impact rounds pack a ton of recoil and require true grit to master. Wield the Sheriff right, and your enemies will know they were expendable.' h2=' SIDEARMS' p ='A modern six-shooter for the headshot searcher.' name='sheriff' src={shef}/>
             <WeaponCard title='This SMG is more potent at medium to long range than its counterparts, but at the cost of firing rate and mobility. The 20-round mag gets wasted in recoil-filled sprays, but lands lethal blows at medium distances with ADS and controlled fire.' h2=' SMGS' p ='They’ll know its over when the Stinger splash hits. ' name='stinger' src={stinger}/>
             <WeaponCard title='This SMG is more potent at medium to long range than its counterparts, but at the cost of firing rate and mobility.' h2=' SMGS' p ='They’ll know its over when the Stinger splash hits.' name='spectre' src={spec}/>
-            <WeaponCard title='' h2=' SMGS' p ='' name='stinger' src={stinger}/>
+            <WeaponCard title='Heavy but stable, Bucky’s primary fire is for holding tight corners or charging close quarters. Alternate fire strikes targets at medium range.' h2=' SHOTGUN' p ='Attacker. Defender. You’re the one with the pump-action shotgun.' name='bucky' src={bucky}/>
+            <WeaponCard title='The Judge is stable at the stand but volatile when fired rapidly. Primary fire hammers short range targets and you’ll need to be steady to nail anything beyond an arms-length.' h2=' SHOTGUN' p ='Automatic, rapid fire shotgun that provides sustained high damage.' name='judge' src={judge}/>
+            <WeaponCard title='A surefire beast when you can pick your shots. Alt. fire lets you ADS and spew accurate, short bursts at anyone who tries you from medium to long-range.' h2=' RIFLES' p ='Some kind of happiness is measured out in taking down enemies with the Bulldog' name='bulldog' src={bulldog}/>
+            <WeaponCard title='The designated marksman rifle. Heavier and less mobile relative to other rifles but precise and powerful. Headhunt when enemies appear at medium to long distances.' h2=' RIFLES' p ='Shines in the hands of a patient shooter.' name='gaurdian' src={gaurdian}/>
+            <WeaponCard title='Go full auto for anyone who tests you up close and short controlled bursts scramble enemies from anywhere. Best when fired while stationary.' h2=' RIFLES' p ='A balanced weapon built for stable, extended shots.' name='phantom' src={phantom}/>
+            <WeaponCard title='The Vandal retains high damage over distance and rewards those who focus single shots at a target’s head. Extended fire results in less stability, however.' h2=' RIFLES' p ='This accurate powerhouse is ferocious in small bursts.' name='vandal' src={vandal}/>
+            <WeaponCard title='A nimble lever-action sniper rifle with a single zoom that can keep bullish enemies at bay. A slow rate of fire means you have to either hit the mark or leave yourself open to attacks.' h2=' SNIPER' p ='Hold an angle, breathe, and they’ll regret turning that corner.' name='marshal' src={mar}/>
+            <WeaponCard title='A fierce bolt-action sniper rifle with high-powered dual zoom. Extremely immobile but fires an incredibly powerful round that can devastate a team with one shot' h2=' SNIPER' p ='Get cozy and you can control important ground.' name='operator' src={awp}/>
+            <WeaponCard title='The Ares’ large magazine means it excels at suppressive fire or dealing heavy damage to clustered groups.' h2=' HEAVY' p ='Don’t mistake its size for clunk.' name='ares' src={ares}/>
+            <WeaponCard title='Suppressive, high damage fire with surprising stability. Spray enemies at short range and use alt. fire to make yourself a living turret.' h2=' HEAVY' p ='Wielding this hammer of a machine threatens glory for the holder and ruin for the foe.' name='odin' src={odin}/>
+            <WeaponCard title='When in doubt or out of bullets, hit them with this. Lets you run fast, destroy objects faster, or one-shot enemies in the back with alt. fire.' h2=' MELEE' p ='An intimate solution.' name='tactical knife' src={bucky}/>
           </div>
         </sectiton>
     </div>
