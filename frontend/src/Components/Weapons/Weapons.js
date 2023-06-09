@@ -19,6 +19,7 @@ import mar from '../Assets/weapons/mar.png'
 import ares from '../Assets/weapons/ares.png'
 import odin from '../Assets/weapons/odin.png'
 import vandal from '../Assets/weapons/vandal.png'
+import knife from '../Assets/weapons/knife.png'
 
 
 
@@ -62,7 +63,7 @@ const Weapons = () => {
             <WeaponCard title='A fierce bolt-action sniper rifle with high-powered dual zoom. Extremely immobile but fires an incredibly powerful round that can devastate a team with one shot' h2=' SNIPER' p ='Get cozy and you can control important ground.' name='operator' src={awp}/>
             <WeaponCard title='The Ares’ large magazine means it excels at suppressive fire or dealing heavy damage to clustered groups.' h2=' HEAVY' p ='Don’t mistake its size for clunk.' name='ares' src={ares}/>
             <WeaponCard title='Suppressive, high damage fire with surprising stability. Spray enemies at short range and use alt. fire to make yourself a living turret.' h2=' HEAVY' p ='Wielding this hammer of a machine threatens glory for the holder and ruin for the foe.' name='odin' src={odin}/>
-            <WeaponCard title='When in doubt or out of bullets, hit them with this. Lets you run fast, destroy objects faster, or one-shot enemies in the back with alt. fire.' h2=' MELEE' p ='An intimate solution.' name='tactical knife' src={bucky}/>
+            <WeaponCard title='When in doubt or out of bullets, hit them with this. Lets you run fast, destroy objects faster, or one-shot enemies in the back with alt. fire.' h2=' MELEE' p ='An intimate solution.' name='tactical knife' src={knife}/>
           </div>
         </sectiton>
     </div>
