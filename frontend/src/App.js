@@ -1,5 +1,6 @@
 import React, { createContext, useReducer } from 'react'
 import {  BrowserRouter,Route,Routes } from 'react-router-dom';
+import {reducer , initialState}from '../src/reducer/UseReduce';
 import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer';
 import About from './Components/About/About';
@@ -12,9 +13,14 @@ import Weapons from './Components/Weapons/Weapons';
 import Home from './Components/Home/Home';
 import Signin from './Components/Signin/Signin1';
 import Logout from './Components/Logout/Logout';
-
-import {reducer , initialState}from '../src/reducer/UseReduce';
 import Yoru from './Components/Agents/Yoru';
+import Reyna from './Components/Agents/Reyna';
+import Sage from './Components/Agents/Sage';
+import Jett from './Components/Agents/Jett';
+import Raze from './Components/Agents/Raze';
+import Astra from './Components/Agents/Astra';
+import Fade from './Components/Agents/Fade';
+import Chamber from './Components/Agents/Chamber';
 
 
   //----- context API -----//
@@ -28,6 +34,15 @@ import Yoru from './Components/Agents/Yoru';
       <Route path='about' element={<About/>}/>
       <Route path='agents' element={<Agents/>}>
         <Route path='yoru' element={<Yoru/>}/>
+        <Route path='reyna' element={<Reyna/>}/>
+        <Route path='sage' element={<Sage/>}/>
+        <Route path='jett' element={<Jett/>}/>
+        <Route path='raze' element={<Raze/>}/>
+        <Route path='astra' element={<Astra/>}/>
+        <Route path='fade' element={<Fade/>}/>
+        <Route path='chamber' element={<Chamber/>}/>
+        
+
       </Route>
       <Route path='maps' element={<Maps/>}/>
       <Route path='skins' element={<Skins/>}/>
