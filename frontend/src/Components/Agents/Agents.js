@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import './Agents.css'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate ,Routes,Route, Link} from 'react-router-dom'
+import Yoru from './Yoru'
 
 
 const Agents = () => {
@@ -35,10 +36,28 @@ const Agents = () => {
         callPage()
      })
 
+ 
   return (
-    <div>
-      <h1>Agents</h1>
-    </div>
+    <>
+      <div className='agentsMain'>
+         <section className='A-sec1'>
+            <div className='A-grid1'>
+               <Link className='A-link' to={'brimstone'}> <h1><b>BRIMSTONE</b></h1></Link>
+               <Link className='A-link' to={'yoru'}><h1 ><b>YORU</b></h1></Link>
+               <Link className='A-link' to={'rayna'}><h1 ><b>RAYNA</b></h1></Link>
+               <Link className='A-link' to={'sova'}><h1><b>SOVA</b></h1></Link>
+               <Link className='A-link' to={'sage'}> <h1><b>SAGE</b></h1></Link>
+               
+            </div>
+            <div className='A-grid2'>
+               <Routes>
+                  <Route path='yoru' element={<Yoru/>}/>
+               </Routes>
+               
+            </div>
+         </section>
+      </div>
+    </>
   )
 }
 

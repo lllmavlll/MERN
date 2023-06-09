@@ -1,0 +1,68 @@
+.A-sec1{
+    background: url(../Assets/bg/blackBG.png);
+    background-attachment: fixed;
+    background-size: contain;
+}
+.A-sec1{
+    padding:  0 50px;
+    display: grid;
+    grid-template-columns: 25% 60%;
+    gap: 10%;
+}
+.A-grid1{
+    overflow-y: auto;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+.A-grid1 .A-link{
+    text-decoration: none;
+}
+
+.A-grid1 .A-link h1{
+   font-size: 80px;
+   color: white;
+   transition: .2s;
+   text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+
+}
+.A-grid1 .A-link h1:hover{
+    margin-left: 30px;
+    color: #0194eb;
+}
+
+.A-cardMain{
+    display: flex;
+    padding: 0 5%;
+    gap: 20px;
+}
+.cMain1{
+    width: 100%;
+    height: 100%;
+    
+}
+.cMain1 img{
+    padding: 20% 0;
+    width: 400px;
+    
+}
+.cMain2{
+    padding: 20% 0;
+}
+.cMain2 h1{
+    font-size: 60px;
+    color: white;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+}
+.cMain2 h3{
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+.cMain2 p{
+    font-size: 18px;
+    color: white;
+   text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+}

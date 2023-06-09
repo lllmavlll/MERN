@@ -14,6 +14,7 @@ import Signin from './Components/Signin/Signin1';
 import Logout from './Components/Logout/Logout';
 
 import {reducer , initialState}from '../src/reducer/UseReduce';
+import Yoru from './Components/Agents/Yoru';
 
 
   //----- context API -----//
@@ -25,7 +26,9 @@ import {reducer , initialState}from '../src/reducer/UseReduce';
       <Routes>
       <Route path='' element={<Home/>}/>
       <Route path='about' element={<About/>}/>
-      <Route path='agents' element={<Agents/>}/>
+      <Route path='agents' element={<Agents/>}>
+        <Route path='yoru' element={<Yoru/>}/>
+      </Route>
       <Route path='maps' element={<Maps/>}/>
       <Route path='skins' element={<Skins/>}/>
       <Route path='support' element={<Support/>}/>
