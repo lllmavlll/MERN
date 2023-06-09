@@ -21,6 +21,18 @@ import Raze from './Components/Agents/Raze';
 import Astra from './Components/Agents/Astra';
 import Fade from './Components/Agents/Fade';
 import Chamber from './Components/Agents/Chamber';
+import Gekko from './Components/Agents/Gekko';
+import Killjoy from './Components/Agents/Killjoy';
+import Skye from './Components/Agents/Skye';
+import Kayo from './Components/Agents/Kayo';
+import Viper from './Components/Agents/Viper';
+import Cypher from './Components/Agents/Cypher';
+import Breach from './Components/Agents/Breach';
+import Sova from './Components/Agents/Sova';
+import Neon from './Components/Agents/Neon';
+import Harbor from './Components/Agents/Harbor';
+import Omen from './Components/Agents/Omen';
+import Phoenix from './Components/Agents/Phoenix';
 
 
   //----- context API -----//
@@ -41,8 +53,18 @@ import Chamber from './Components/Agents/Chamber';
         <Route path='astra' element={<Astra/>}/>
         <Route path='fade' element={<Fade/>}/>
         <Route path='chamber' element={<Chamber/>}/>
-        
-
+        <Route path='gekko' element={<Gekko/>}/>
+        <Route path='killjoy' element={<Killjoy/>}/>
+        <Route path='skye' element={<Skye/>}/>
+        <Route path='kay-o' element={<Kayo/>}/>
+        <Route path='viper' element={<Viper/>}/>
+        <Route path='cypher' element={<Cypher/>}/>
+        <Route path='breach' element={<Breach/>}/>
+        <Route path='sova' element={<Sova/>}/>
+        <Route path='neon' element={<Neon/>}/>
+        <Route path='harbor' element={<Harbor/>}/>
+        <Route path='omen' element={<Omen/>}/>
+        <Route path='phoenix' element={<Phoenix/>}/>
       </Route>
       <Route path='maps' element={<Maps/>}/>
       <Route path='skins' element={<Skins/>}/>

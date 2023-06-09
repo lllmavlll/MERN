@@ -9,6 +9,18 @@ import Raze from './Raze'
 import Astra from './Astra'
 import Fade from './Fade'
 import Chamber from './Chamber'
+import Gekko from './Gekko'
+import Killjoy from './Killjoy'
+import Skye from './Skye'
+import Kayo from './Kayo'
+import Viper from './Viper'
+import Cypher from './Cypher'
+import Breach from './Breach'
+import Sova from './Sova'
+import Neon from './Neon'
+import Harbor from './Harbor'
+import Omen from './Omen'
+import Phoenix from './Phoenix'
 
 
 const Agents = () => {
@@ -49,7 +61,7 @@ const Agents = () => {
       <div className='agentsMain'>
          <section className='A-sec1'>
             <div className='A-grid1'>
-               <Link className='A-link' to={'brimstone'}> <h1><b>BRIMSTONE</b></h1></Link>
+               <Link className='A-link' to={''}> <h1><b>BRIMSTONE</b></h1></Link>
                <Link className='A-link' to={'phoenix'}><h1 ><b>PHOENIX</b></h1></Link>
                <Link className='A-link' to={'sage'}><h1 ><b>SAGE</b></h1></Link>
                <Link className='A-link' to={'sova'}><h1 ><b>SOVA</b></h1></Link>
@@ -74,6 +86,7 @@ const Agents = () => {
             </div>
             <div className='A-grid2'>
                <Routes>
+                  <Route path='' element={<Yoru/>}/>
                   <Route path='yoru' element={<Yoru/>}/>
                   <Route path='reyna' element={<Reyna/>}/>
                   <Route path='sage' element={<Sage/>}/>
@@ -82,8 +95,18 @@ const Agents = () => {
                   <Route path='astra' element={<Astra/>}/>
                   <Route path='fade' element={<Fade/>}/>
                   <Route path='chamber' element={<Chamber/>}/>
-
-
+                  <Route path='gekko' element={<Gekko/>}/>
+                  <Route path='killjoy' element={<Killjoy/>}/>
+                  <Route path='skye' element={<Skye/>}/>
+                  <Route path='kay-o' element={<Kayo/>}/>
+                  <Route path='viper' element={<Viper/>}/>
+                  <Route path='cypher' element={<Cypher/>}/>
+                  <Route path='breach' element={<Breach/>}/>
+                  <Route path='sova' element={<Sova/>}/>
+                  <Route path='neon' element={<Neon/>}/>
+                  <Route path='harbor' element={<Harbor/>}/>
+                  <Route path='omen' element={<Omen/>}/>
+                  <Route path='phoenix' element={<Phoenix/>}/>
                </Routes>
                
             </div>

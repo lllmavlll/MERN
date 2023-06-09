@@ -14,7 +14,6 @@
     max-height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
     padding-right: 30px;
 }
@@ -55,6 +54,7 @@
 }
 .cMain2{
     padding: 40% 0;
+    z-index: 5;
 }
 .cMain2 h1{
     font-size: 60px;
@@ -77,4 +77,8 @@
 
 .cMain1  .reyna{
     width: 300px;
+}
+.cMain1  .neon{
+    width: 650px;
+   
 }
