@@ -5,6 +5,8 @@
     flex-direction: column;
     color: white;
     align-items: center;
+    background: url(../Assets/bg/val_BGI.jpg);
+    background-attachment: fixed;
 }
 .AboutCentre{
     padding: 50px 0;
