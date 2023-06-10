@@ -131,10 +131,8 @@ body{
     overflow: hidden;
     }
     .supContainer .supBanner img{
-        object-position: 0 -30px;
-     width: 150%;
-
-
+        object-position: -140px 0;
+        width: 100%;
     }
     .supContainer .supMessage{
         width: 70%;
