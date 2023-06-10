@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Support.css'
-import supBanner from '../Assets/imgs/supBgi.jpg'
-// import {useNavigate}  from 'react-router-dom'
+import supBanner from '../Assets/bg/wideBanner1.webp'
 
 
 const Support =()=>{
@@ -33,7 +32,7 @@ const Support =()=>{
    useEffect(()=>{
       callPage()
    },[])
-   //----- storing data in thr state -----//
+   //----- storing data in the state -----//
 
    const inputHandler =(e)=>{
       const name = e.target.name

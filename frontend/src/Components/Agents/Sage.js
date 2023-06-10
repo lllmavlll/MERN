@@ -9,6 +9,7 @@ const Sage = () => {
               <img src={sage} alt=''/>
           </div>
           <div className='cMain2'>
+              <h1><b>SAGE </b></h1>
               <h3>ROLE //</h3>
               <h1><b>SENTINEL </b></h1>
               <h3> BIOGRAPHY //</h3>

@@ -10,6 +10,7 @@ const Fade = () => {
                 <img src={fade} alt=''/>
             </div>
             <div className='cMain2'>
+                <h1><b>FADE</b></h1>
                 <h3>ROLE //</h3>
                 <h1><b>INITIATOR</b></h1>
                 <h3> BIOGRAPHY //</h3>

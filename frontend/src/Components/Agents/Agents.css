@@ -12,7 +12,6 @@
 .A-grid1{
     overflow-y: auto;
     gap: 0px;
-    margin-bottom: -10px;
     max-height: 92vh;
     display: flex;
     flex-direction: column;
@@ -21,6 +20,7 @@
 }
 .A-grid1::-webkit-scrollbar{
     color:#0194eb;
+    width: 0;
 }
 .A-grid1 .A-link{
     text-decoration: none;
@@ -55,7 +55,7 @@
     position: absolute;
 }
 .cMain2{
-    padding: 40% 0;
+    padding: 30% 0;
     z-index: 5;
 }
 .cMain2 h1{
@@ -80,9 +80,6 @@
 .cMain1  .reyna{
     width: 300px;
 }
-.cMain1  .neon{
-    width: 630px;
-}
 .cMain1  .trio{
     width: 600px;
     padding-right: 50px;
@@ -96,7 +93,7 @@
     }
     .A-grid1{
         overflow-x: auto;
-        margin-bottom: -10px;
+        margin-bottom: -0;
         height: 100px;
         flex-direction: row;
         gap: 30px;
@@ -149,9 +146,6 @@
     }
     .cMain1  .reyna{
         width: 300px;
-    }
-    .cMain1  .neon{
-        width: 330px;
     }
     .cMain1  .trio{
         width: 300px;

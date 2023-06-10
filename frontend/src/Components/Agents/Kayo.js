@@ -10,6 +10,7 @@ const Kayo = () => {
                 <img src={kayo} alt=''/>
             </div>
             <div className='cMain2'>
+                <h1><b>KAY/O</b></h1>
                 <h3>ROLE //</h3>
                 <h1><b>INITIATOR</b></h1>
                 <h3> BIOGRAPHY //</h3>

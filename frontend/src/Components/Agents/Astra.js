@@ -11,6 +11,7 @@ const Astra = () => {
                 <img src={astra} alt=''/>
             </div>
             <div className='cMain2'>
+                <h1><b>ASTRA</b></h1>
                 <h3>ROLE //</h3>
                 <h1><b>CONTROLLER</b></h1>
                 <h3> BIOGRAPHY //</h3>

@@ -9,6 +9,7 @@ const Yoru = () => {
                  <img src={yoru} alt=''/>
             </div>
             <div className='cMain2'>
+                <h1><b>YORU </b></h1>
                 <h3>ROLE //</h3>
                 <h1><b>DUELIST </b></h1>
                 <h3> BIOGRAPHY //</h3>

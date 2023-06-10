@@ -10,6 +10,7 @@ const Harbor = () => {
             <img src={harbor} alt=''/>
         </div>
         <div className='cMain2'>
+            <h3> HARBOR //</h3>
             <h3>ROLE //</h3>
             <h1><b>CONTROLLER</b></h1>
             <h3> BIOGRAPHY //</h3>

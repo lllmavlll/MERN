@@ -10,6 +10,7 @@ const Breach = () => {
             <img src={breach} alt=''/>
         </div>
         <div className='cMain2'>
+            <h1><b>BREACH</b></h1>
             <h3>ROLE //</h3>
             <h1><b>INITIATOR</b></h1>
             <h3> BIOGRAPHY //</h3>

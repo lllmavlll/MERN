@@ -9,6 +9,7 @@ const Jett = () => {
              <img src={jett} alt=''/>
         </div>
         <div className='cMain2'>
+            <h1><b>JETT </b></h1>
             <h3>ROLE //</h3>
             <h1><b>DUELIST </b></h1>
             <h3> BIOGRAPHY //</h3>

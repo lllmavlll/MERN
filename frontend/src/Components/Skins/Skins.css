@@ -1,0 +1,5 @@
+.skinsMain{
+    background: url(../Assets/bg/omenBG.png);
+    background-attachment: fixed;
+    background-size: contain;
+}

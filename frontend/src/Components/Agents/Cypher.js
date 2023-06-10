@@ -10,6 +10,7 @@ const Cypher = () => {
             <img src={cypher} alt=''/>
         </div>
         <div className='cMain2'>
+            <h1><b>CYPHER </b></h1>
             <h3>ROLE //</h3>
             <h1><b>SENTINEL </b></h1>
             <h3> BIOGRAPHY //</h3>

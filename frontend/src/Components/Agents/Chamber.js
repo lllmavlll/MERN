@@ -10,6 +10,7 @@ const Chamber = () => {
               <img src={chamber} alt=''/>
           </div>
           <div className='cMain2'>
+              <h1><b>CHAMBER </b></h1>
               <h3>ROLE //</h3>
               <h1><b>SENTINEL </b></h1>
               <h3> BIOGRAPHY //</h3>

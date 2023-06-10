@@ -6,7 +6,7 @@ const Neon = () => {
     <>
         <div className='A-cardMain'>
             <div className='cMain1'>
-                 <img className='neon' src={neon} alt=''/>
+                 <img src={neon} alt=''/>
             </div>
             <div className='cMain2'>
                 <h3>ROLE //</h3>

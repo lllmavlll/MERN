@@ -10,6 +10,7 @@ const Omen = () => {
             <img src={omen} alt=''/>
         </div>
         <div className='cMain2'>
+            <h1><b>OMEN</b></h1>
             <h3>ROLE //</h3>
             <h1><b>CONTROLLER</b></h1>
             <h3> BIOGRAPHY //</h3>
