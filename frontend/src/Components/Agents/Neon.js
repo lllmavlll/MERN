@@ -1,7 +1,7 @@
 import React from 'react'
 import neon from '../Assets/AgentsPng/neon.png'
 
-const Yoru = () => {
+const Neon = () => {
   return (
     <>
         <div className='A-cardMain'>
@@ -19,4 +19,4 @@ const Yoru = () => {
   )
 }
 
-export default Yoru
+export default Neon

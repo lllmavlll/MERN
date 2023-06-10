@@ -6,11 +6,13 @@
 .A-sec1{
     padding:  0 50px;
     display: grid;
-    grid-template-columns: 30% 60%;
-    gap: 10%;
+    grid-template-columns: 30% 62%;
+    gap: 8%;
 }
 .A-grid1{
     overflow-y: auto;
+    gap: 0px;
+    margin-bottom: -10px;
     max-height: 90vh;
     display: flex;
     flex-direction: column;
@@ -26,18 +28,18 @@
    color: white;
    transition: .4s;
    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
-
+   border-spacing: -10px;
 }
 .A-grid1 .A-link h1:hover{
-    margin-left: 15px;
+    margin-left: 25px;
     color: #0194eb;
 }
 
 .A-cardMain{
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 60% 45%;
     padding: 0 5%;
-    gap: 20px;
+    gap: 10px;
 }
 .cMain1{
     width: 100%;
@@ -79,6 +81,15 @@
     width: 300px;
 }
 .cMain1  .neon{
-    width: 650px;
+    width: 600px;
    
+}
+.cMain1  .trio{
+    width: 600px;
+    padding-right: 50px;
+   
+}
+
+@media (max-width:768px){
+
 }

@@ -21,6 +21,8 @@ import Neon from './Neon'
 import Harbor from './Harbor'
 import Omen from './Omen'
 import Phoenix from './Phoenix'
+import Brimstone from './Brimstone'
+import AgentsHome from './AgentsHome'
 
 
 const Agents = () => {
@@ -61,7 +63,7 @@ const Agents = () => {
       <div className='agentsMain'>
          <section className='A-sec1'>
             <div className='A-grid1'>
-               <Link className='A-link' to={''}> <h1><b>BRIMSTONE</b></h1></Link>
+               <Link className='A-link' to={'brimstone'}> <h1><b>BRIMSTONE</b></h1></Link>
                <Link className='A-link' to={'phoenix'}><h1 ><b>PHOENIX</b></h1></Link>
                <Link className='A-link' to={'sage'}><h1 ><b>SAGE</b></h1></Link>
                <Link className='A-link' to={'sova'}><h1 ><b>SOVA</b></h1></Link>
@@ -86,7 +88,8 @@ const Agents = () => {
             </div>
             <div className='A-grid2'>
                <Routes>
-                  <Route path='' element={<Yoru/>}/>
+                  <Route path='' element={<AgentsHome/>}/>
+                  <Route path='brimstone' element={<Brimstone/>}/>
                   <Route path='yoru' element={<Yoru/>}/>
                   <Route path='reyna' element={<Reyna/>}/>
                   <Route path='sage' element={<Sage/>}/>

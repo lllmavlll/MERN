@@ -33,6 +33,8 @@ import Neon from './Components/Agents/Neon';
 import Harbor from './Components/Agents/Harbor';
 import Omen from './Components/Agents/Omen';
 import Phoenix from './Components/Agents/Phoenix';
+import Brimstone from './Components/Agents/Brimstone';
+import AgentsHome from './Components/Agents/AgentsHome';
 
 
   //----- context API -----//
@@ -45,7 +47,9 @@ import Phoenix from './Components/Agents/Phoenix';
       <Route path='' element={<Home/>}/>
       <Route path='about' element={<About/>}/>
       <Route path='agents' element={<Agents/>}>
+        <Route path='' element={<AgentsHome/>}/>
         <Route path='yoru' element={<Yoru/>}/>
+        <Route path='brimstone' element={<Brimstone/>}/>
         <Route path='reyna' element={<Reyna/>}/>
         <Route path='sage' element={<Sage/>}/>
         <Route path='jett' element={<Jett/>}/>
