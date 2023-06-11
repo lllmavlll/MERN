@@ -54,7 +54,7 @@ auth.post('/signup',async(req,res)=>{
 })
 
 
-//----- sign route-----//
+//----- sign in route-----//
 auth.get('/signin',(req,res)=>{
     res.send("signin")
 })
@@ -85,7 +85,7 @@ auth.post('/signin',async(req,res)=>{
             httpOnly:true
         })
         
-       return res.status(200).json({message:"sighnin yessss"})
+       return res.status(200).json({message:"sighnin successfull"})
 
     } catch (error) {
      return   res.status(500).json({message:"something went wrong"})

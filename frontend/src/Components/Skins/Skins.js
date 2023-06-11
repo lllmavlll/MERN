@@ -1,9 +1,10 @@
-import React ,{ useEffect} from 'react'
+import React ,{ useEffect , useState} from 'react'
 import './Skins.css'
 import { useNavigate } from 'react-router-dom'
 import skinBundle from '../Assets/skins/AraxysB.jpg'
 import edition from '../Assets/skins/editions.png'
 import shop from '../Assets/skins/shop.webp'
+import skinData from '../../skinsLocalData/skinsData.json'
 
 const Skins = () => {
   const navigate =useNavigate()
@@ -35,6 +36,31 @@ const Skins = () => {
    useEffect(()=>{
       callPage()
    })
+
+   //----- fetcihig skin  from local data -----//
+
+   const [fetchData,setFetchData]= useState([])
+
+
+   useEffect(()=>{
+      async function getData(){
+         const response = await fetch('skinsData.json')
+         const data = await response.json()
+         setFetchData(data)
+
+         // .then(response=>response.json())
+         // .then(data=>showSkins(data))
+      
+         // function showSkins(data){
+         //    console.log(data.skins)
+         // }
+
+      }
+      getData()
+      console.log(fetchData,"results")
+   },[]);
+
+ 
   return (
     <>
       <div className='skinsMain'>
@@ -98,6 +124,25 @@ const Skins = () => {
                </div>
 
             </div>
+         </section>
+
+         <section className='sec5'>
+            {/* {
+               skinData.map(skin=>{
+                  return(
+                     <div>{skin.name}</div>
+                  )
+               })
+            } */}
+            <h1>Search for Skins</h1>
+            <h1>{skinData.name}</h1>
+
+            <div className='skinSearchBox'>
+               <input  type='text' name='search' placeholder='search here '/>
+               <button type='submit'><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+
          </section>
       
       </div>

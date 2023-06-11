@@ -73,6 +73,40 @@
     padding: 0 5%;
     padding-bottom: 40PX;
 }
+.sec5{
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    padding: 0 5%;
+}
+.sec5 h1{
+    color: white;
+    font-size: 50px;
+    text-shadow:  0 5px 10px rgba(0, 0, 0, 0.4);
+}
+.skinSearchBox{
+    display: flex;
+    gap: 5%;
+}
+.skinSearchBox input{
+    background: none;
+    color: white;
+    border: 1px solid #0194eb;
+    padding: 5px;
+    border-radius: 5px;
+    width: 250px;
+    outline: none;
+}
+.skinSearchBox input::placeholder{
+    color: #0194eb;
+}
+.skinSearchBox button{
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+}
+
 
 
 
@@ -131,5 +165,12 @@
     .Sk-sec4-grid2 img{
         width: 310px;
         padding-bottom: 50px;
+    }
+    .sec5{
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        align-items: center;
+        padding: 0 5%;
     }
 }
