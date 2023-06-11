@@ -141,6 +141,8 @@ const Skins = () => {
                <input  type='text' name='search' placeholder='search here '/>
                <button type='submit'><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
+            <h1>this section is under devlopment</h1>
+            
 
 
          </section>
